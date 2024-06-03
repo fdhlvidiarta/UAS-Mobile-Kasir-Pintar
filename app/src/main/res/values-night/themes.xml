@@ -3,5 +3,10 @@
     <style name="Base.Theme.KasirMobile" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <item name="colorAccent">@color/myAccentColor</item>
+        <item name="android:windowBackground">@color/myBackgroundColor</item>
+        <item name="android:fontFamily">@font/my_font_family</item>
     </style>
 </resources>

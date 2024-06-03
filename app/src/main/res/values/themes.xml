@@ -3,6 +3,11 @@
     <style name="Base.Theme.KasirMobile" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <item name="colorAccent">@color/myAccentColor</item>
+        <item name="android:windowBackground">@color/myBackgroundColor</item>
+        <item name="colorOnSurfaceInverse">@color/myBarBackgroundColor</item>
     </style>
 
     <style name="Theme.KasirMobile" parent="Base.Theme.KasirMobile" />
