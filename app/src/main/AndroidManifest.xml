@@ -12,42 +12,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KasirMobile"
         tools:targetApi="31">
-
         <activity
-            android:name=".MasukActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".KeranjangActivity"
+            android:exported="false">
         </activity>
-
         <activity
-            android:name=".DftrLogActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".TentangKamiActivity"
+            android:exported="false">
         </activity>
-
+        <activity
+            android:name=".ProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".DftrLogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MasukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BuatAkunActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BerandaActivity"
+            android:exported="false">
         </activity>
 
-        <activity
-            android:name="com.fadhil.kasir_mobile.BuatAkunActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

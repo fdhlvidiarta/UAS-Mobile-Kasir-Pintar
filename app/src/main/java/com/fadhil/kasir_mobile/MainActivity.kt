@@ -9,21 +9,20 @@ import android.widget.ImageView
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main) // Set layout activity_main sebagai tata letak konten
 
+        // Mencari referensi ke view komponen di layout
         val btnNext: Button = findViewById(R.id.btn_next)
         val imgPanah: ImageView = findViewById(R.id.img_panah)
 
-        imgPanah.setOnClickListener {
-            // Buat Intent untuk memulai activity kedua
-            val intent = Intent(this, DftrLogActivity::class.java)
-            startActivity(intent) // Memulai activity kedua
-        }
-
+        // Memberikan fungsi klik untuk tombol navigasi btnNext ke activity_DftrLogin
         btnNext.setOnClickListener {
-            // Buat Intent untuk memulai activity kedua
             val intent = Intent(this, DftrLogActivity::class.java)
-            startActivity(intent) // Memulai activity kedua
+            startActivity(intent)
+        }
+        imgPanah.setOnClickListener {
+            val intent = Intent(this, DftrLogActivity::class.java)
+            startActivity(intent)
         }
     }
 }

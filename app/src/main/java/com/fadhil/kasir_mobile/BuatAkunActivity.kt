@@ -11,19 +11,19 @@ class BuatAkunActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buat_akun)
 
+        // Mencari referensi ke view komponen di layout
         val imgBack: ImageView = findViewById(R.id.btn_back)
         val btnBuatakun: Button = findViewById(R.id.buat_akun_button)
 
-        imgBack.setOnClickListener {
-            // Buat Intent untuk memulai activity kedua
+        // Memberikan fungsi onClickListener untuk tombol kembali
+        imgBack.setOnClickListener { // Membuat intent untuk kembali ke DftrLogActivity
             val intent = Intent(this, DftrLogActivity::class.java)
-            startActivity(intent) // Memulai activity kedua
+            startActivity(intent)
         }
-
+        // Memberikan fungsi klik untuk btnBuatakun ke activityMasuk
         btnBuatakun.setOnClickListener {
-            // Buat Intent untuk memulai activity kedua
-            val intent = Intent(this, DftrLogActivity::class.java)
-            startActivity(intent) // Memulai activity kedua
+            val intent = Intent(this, MasukActivity::class.java)
+            startActivity(intent)
         }
     }
 }
