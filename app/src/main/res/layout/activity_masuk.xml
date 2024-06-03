@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MasukActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -16,7 +17,7 @@
 
         <!-- Posisi item dalam Toolbar diatur dengan layout_gravity -->
         <ImageView
-            android:id="@+id/btn_back"
+            android:id="@+id/img_back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="start"
@@ -63,59 +64,72 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/input_email" />
 
+
     <TextView
         android:id="@+id/txt_akun"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="156dp"
-        android:text="Belum memiliki akun? Daftar disini"
+        android:layout_width="147dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:text="Belum memiliki akun?"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.376"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_google" />
+
+    <TextView
+        android:id="@+id/txt_Daftardisini"
+        android:layout_width="93dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="84dp"
+        android:text="Daftar disini"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#8E4AAE"
         android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/img_google" />
 
     <ImageView
         android:id="@+id/img_google"
         android:layout_width="79dp"
         android:layout_height="55dp"
-        android:layout_marginStart="167dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="164dp"
+        android:layout_marginTop="19dp"
         android:src="@drawable/google"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txt_masuk_google"
+        app:layout_constraintTop_toBottomOf="@+id/txt_masuk_google"
         app:srcCompat="@drawable/google" />
 
     <TextView
         android:id="@+id/txt_masuk_google"
         android:layout_width="239dp"
         android:layout_height="29dp"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="32dp"
         android:text="Atau Masuk dengan akun Google"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_masuk" />
 
     <Button
         android:id="@+id/btn_masuk"
         android:layout_width="262dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#8E4AAE"
         android:text="Masuk"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/txt_masuk_google"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_password" />
 
     <TextView
         android:id="@+id/btn_daftar"

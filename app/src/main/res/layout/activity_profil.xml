@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfilActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="408dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="6dp"
+            android:layout_toStartOf="@+id/HeaderProfil"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/HeaderProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="183dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Profil"
+            android:textColor="@color/material_dynamic_neutral30"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <!-- img Staff -->
+    <ImageView
+        android:id="@+id/staffImage"
+        android:layout_width="108dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/circle_shap"
+        android:clipToOutline="true"
+        android:contentDescription="@string/staff_name"
+        android:src="@drawable/humancrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/txtEditProfil"
+        android:layout_width="126dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Edit profil image"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staffImage" />
+
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/poppins"
+        android:text="Nama"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEditProfil" />
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Yezar Kenzi"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/name_label"
+        app:layout_constraintStart_toEndOf="@+id/name_label"
+        app:layout_constraintTop_toTopOf="@+id/name_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/name_label"
+        app:layout_constraintTop_toBottomOf="@+id/name_label" />
+
+
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="YezarKenzi@gmail.com"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/email_label"
+        app:layout_constraintStart_toEndOf="@+id/email_label"
+        app:layout_constraintTop_toTopOf="@+id/email_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/alamat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Alamat"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/email_label"
+        app:layout_constraintTop_toBottomOf="@+id/email_label" />
+
+    <TextView
+        android:id="@+id/txt_alamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Jln. Mawar"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/alamat_label"
+        app:layout_constraintStart_toEndOf="@+id/alamat_label"
+        app:layout_constraintTop_toTopOf="@+id/alamat_label" />
+
+
+    <TextView
+        android:id="@+id/bio_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:text="Bio"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/alamat_label"
+        app:layout_constraintTop_toBottomOf="@+id/alamat_label" />
+
+    <TextView
+        android:id="@+id/txt_bio"
+        android:layout_width="237dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="48dp"
+        android:text="Jenis kelamin: Laki-laki, Hobi: lari, Ttg: Madiun, 17, Juni, 2007"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bio_label"
+        app:layout_constraintStart_toEndOf="@+id/bio_label"
+        app:layout_constraintTop_toTopOf="@+id/bio_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

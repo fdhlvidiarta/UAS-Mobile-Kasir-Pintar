@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TentangKamiActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="396dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/staffName"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/staffName"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="147dp"
+            android:layout_marginBottom="9dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Tentang Kami"
+            android:textColor="@color/material_dynamic_neutral30"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+    </RelativeLayout>
+
+    <!-- Gambar Staff -->
+    <ImageView
+        android:id="@+id/staffImage"
+        android:layout_width="108dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circle_shap"
+        android:clipToOutline="true"
+        android:contentDescription="@string/staff_name"
+        android:src="@drawable/humancrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/txtJudulKami"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Tentang Kami"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staffImage" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kasir Yzrxu Wujudkan Kasir Pintar "
+        android:textColor="@color/abuyuuu"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtJudulKami" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="371dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="15dp"
+        android:text="Kasir Yzrxu aplikasi kasir mobile dirancang untuk bisnis kecil dan menengah (UKM) mengelola transaksi penjualan dengan mudah dan efesien. "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

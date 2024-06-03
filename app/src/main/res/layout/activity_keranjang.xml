@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".KeranjangActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="402dp"
+        android:layout_height="49dp"
+        android:layout_alignParentEnd="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="117dp"
+            android:layout_marginBottom="9dp"
+            android:layout_toStartOf="@+id/HeaderProfil"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/HeaderProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="163dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Keranjang"
+            android:textColor="@color/material_dynamic_neutral30"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="351dp"
+        android:layout_height="352dp"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/product_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/imageTabLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@color/semu"
+        app:layout_constraintBottom_toTopOf="@+id/productName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="Image tab layout"
+        app:layout_constraintTop_toBottomOf="@+id/productImage" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Motherboard Asus B150M Pro"
+        android:textColor="@color/myPrimaryColor"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.235"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImage" />
+
+    <TextView
+        android:id="@+id/kapasitasTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Kapasitas: "
+        app:layout_constraintEnd_toStartOf="@+id/kapasitasItem"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+    <TextView
+        android:id="@+id/kapasitasItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins"
+        android:text="1 Item"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+    <ImageView
+        android:id="@+id/plusButton"
+        android:layout_width="34dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="200dp"
+        android:background="@drawable/plus_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/kapasitasItem"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+    <TextView
+        android:id="@+id/totalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="17dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Total Harga:"
+        android:textColor="@color/myPrimaryColor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kapasitasTxt" />
+
+    <TextView
+        android:id="@+id/totalUang"
+        android:layout_width="203dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="88dp"
+        android:fontFamily="@font/poppins"
+        android:gravity="start"
+        android:text="Rp. 2.430.000,00"
+        android:textAlignment="viewStart"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+
+    <Button
+        android:id="@+id/beliButton"
+        android:layout_width="343dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="52dp"
+        android:text="Beli"
+        app:layout_constraintBottom_toTopOf="@+id/Bootom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/Bootom"
+        android:layout_width="402dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="780dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="316dp"
+            android:background="@drawable/home"
+            android:contentDescription="Home button"
+            android:padding="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/cartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/cart"
+            android:contentDescription="Keranjang button"
+            android:padding="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/notifButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="226dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="141dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/bell"
+            android:contentDescription="Notif button"
+            android:padding="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/humbergerButton"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="322dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/vector"
+            android:contentDescription="menu button"
+            android:padding="8dp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
